@@ -1,4 +1,11 @@
-﻿workflow StartStopVM
+﻿<#
+    .DESCRIPTION
+        
+
+    .NOTES
+       
+#>
+workflow StartStopVM
 {
    $Conn = Get-AutomationConnection -Name AzureRunAsConnection
     Add-AzureRMAccount -ServicePrincipal -Tenant $Conn.TenantID `
